@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash"
-    android:background="@drawable/ic_splash">
+    tools:context=".projectakhir.SplashActivity"
+    android:background="@drawable/ic_bg_splash">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#99E0FA</color>
-    <color name="colorPrimarySplash">#009EE0</color>
-    <color name="colorPrimaryDark">#99E0FA</color>
-    <color name="colorPrimaryDarkSplash">#009EE0</color>
-    <color name="colorAccent">#99E0FA</color>
-    <color name="colorAccentSplash">#009EE0</color>
+    <color name="colorPrimary">#202225</color>
+    <color name="colorPrimarySplash">#36393F</color>
+    <color name="colorPrimaryDark">#202225</color>
+    <color name="colorPrimaryDarkSplash">#36393F</color>
+    <color name="colorAccent">#202225</color>
+    <color name="colorAccentSplash">#36393F</color>
+
+    <!-- Basic Color -->
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- Button Color -->
+    <color name="colorPeterRiver">#202225</color>
+    <color name="colorPeterPressed">#36393F</color>
+    <color name="greenLogin">#96EB64</color>
+    <color name="greenPressed">#32AF5A</color>
 </resources>
