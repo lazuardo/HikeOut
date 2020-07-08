@@ -22,6 +22,9 @@ Update :
 
     26 Juni 2020    : - Redesign SplashScreen dan Background MainActivity
     27 Juni 2020    : - Membuat LoginActivity, RegisterActivity dengan shared preferences (sementara)
+    03 Juli 2020    : - Membuat Struktur Database dengan phpmyadmin (belum online)
+    09 Juli 2022    : - Membuat ViewPager dengan nama WalktroughActivity dengan sharedPreferences
+                      - Merubah Desain Icon Aplikasi
 */
 
 public class MainActivity extends AppCompatActivity {

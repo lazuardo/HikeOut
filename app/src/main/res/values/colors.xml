@@ -6,6 +6,7 @@
     <color name="colorPrimaryDarkSplash">#36393F</color>
     <color name="colorAccent">#202225</color>
     <color name="colorAccentSplash">#36393F</color>
+    <color name="colorTransparentWhite">#cccccc</color>
 
     <!-- Basic Color -->
     <color name="colorWhite">#FFFFFF</color>

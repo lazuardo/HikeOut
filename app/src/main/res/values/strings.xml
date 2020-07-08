@@ -11,4 +11,6 @@
     <string name="keluar">Logout</string>
     <string name="register">Daftar</string>
     <string name="Hi">Hi,</string>
+    <string name="H1">HEADING</string>
+    <string name="D1">Description</string>
 </resources>

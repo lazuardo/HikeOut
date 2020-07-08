@@ -21,7 +21,9 @@
     <dimen name="dp140">140dp</dimen>
     <dimen name="dp150">150dp</dimen>
     <dimen name="dp160">160dp</dimen>
+    <dimen name="dp220">220dp</dimen>
     <dimen name="dp300">300dp</dimen>
+    <dimen name="dp600">600dp</dimen>
 
     <!-- Default Text Size-->
     <dimen name="sp10">10sp</dimen>
