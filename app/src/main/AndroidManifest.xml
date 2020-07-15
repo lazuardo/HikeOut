@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".projectakhir.WalkthroughActivity"></activity>
-        <activity android:name=".projectakhir.RegisterActivity"></activity>
+        <activity android:name=".projectakhir.AboutActivity"></activity>
+        <activity android:name=".projectakhir.WalkthroughActivity" />
+        <activity android:name=".projectakhir.RegisterActivity" />
         <activity android:name=".projectakhir.LoginActivity" />
         <activity
             android:name=".projectakhir.SplashActivity"

@@ -3,15 +3,14 @@
 
     <item>
         <shape>
-            <solid android:color="@color/colorWhite" />
-
-            <corners android:radius="@dimen/dp14" />
+            <solid android:color="@color/colorWhite"/>
+            <corners android:radius="@dimen/dp36"/>
         </shape>
     </item>
-    <item android:right="@dimen/dp1"
-        android:left="@dimen/dp1"
-        android:top="@dimen/dp1"
-        android:bottom="@dimen/dp1">
+    <item android:right="@dimen/dp3"
+        android:left="@dimen/dp3"
+        android:top="@dimen/dp3"
+        android:bottom="@dimen/dp3">
         <selector>
             <item android:state_pressed="true">
                 <shape>
@@ -24,7 +23,7 @@
                 <shape>
                     <solid android:color="@color/colorPeterRiver" />
 
-                    <corners android:radius="@dimen/dp14" />
+                    <corners android:radius="@dimen/dp36" />
                 </shape>
             </item>
         </selector>

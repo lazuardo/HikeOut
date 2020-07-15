@@ -4,7 +4,7 @@
     <string name="masuk">Masuk</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="daftar">Belum punya akun? Yuk Daftar</string>
+    <string name="daftar">Belum Punya Aun ? Yuk Daftar</string>
     <string name="confirm">Confirm Password</string>
     <string name="phonenumber">Nomor Telepon</string>
     <string name="forget">Lupa password?</string>
@@ -13,4 +13,21 @@
     <string name="Hi">Hi,</string>
     <string name="H1">HEADING</string>
     <string name="D1">Description</string>
+
+    <!-- BottomNav String -->
+    <string name="home">Home</string>
+    <string name="location">Location</string>
+    <string name="about">About</string>
+
+    <!-- CardView String -->
+    <string name="carrier">Carrier Bag</string>
+    <string name="Tent">Tent</string>
+    <string name="Acc">Accessories</string>
+    <!-- Desc CardView String -->
+    <string name="carrier_desc">Melihat Informasi Mengenai Carrier Bag</string>
+    <string name="tent_desc">Melihat Informasi Mengenai Tenda</string>
+    <string name="acc_desc">Melihat Informasi Mengenai Aksesoris Pendakian</string>
+
+    <!-- Resousrce String -->
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
 </resources>

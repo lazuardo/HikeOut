@@ -13,4 +13,5 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDarkSplash</item>
         <item name="colorAccent">@color/colorAccentSplash</item>
     </style>
+
 </resources>
