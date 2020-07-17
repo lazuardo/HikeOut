@@ -30,4 +30,5 @@
 
     <!-- Resousrce String -->
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="copy_right">Juan Lazuardo %1$d</string>
 </resources>

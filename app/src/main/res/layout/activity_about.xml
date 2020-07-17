@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/slider_background"
+    android:background="@drawable/ic_bg_main"
     tools:context=".projectakhir.AboutActivity">
 
     <FrameLayout
@@ -23,9 +23,4 @@
         app:itemTextColor="@drawable/state_bnve"
         app:menu="@menu/bottomnavigation_menu" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/acc_desc"/>
 </RelativeLayout>
