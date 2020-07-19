@@ -3,17 +3,14 @@ package com.apps.projectakhir.juanlazuardo.projectakhir;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import com.apps.projectakhir.juanlazuardo.R;
 import com.apps.projectakhir.juanlazuardo.fragment.AboutFragment;
 import com.apps.projectakhir.juanlazuardo.fragment.HomeFragment;
-import com.apps.projectakhir.juanlazuardo.fragment.LocationFragment;
-import com.apps.projectakhir.juanlazuardo.utils.Preferences;
+import com.apps.projectakhir.juanlazuardo.fragment.ListFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 /*
@@ -33,12 +30,15 @@ Update :
                       - Merubah Desain Icon Aplikasi
     15 Juli 2020    : - Menambah CardView pada MainActivity
                       - Menambah Bottom Navigation
+    18 Juli 2020    : - Membuat AboutFragment menggunakan external library
+                      - Membuat ListFragment
+    19 Juli 2020    : - Membuat RecyclerView di HomeFragment
+                      - Connect Database menggunakan Retrofit
+                      - Mengelola Data Database dengan Retrofit
 */
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView txtKeluar;
-    private TextView txtName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,17 +48,17 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(new HomeFragment());
         // inisialisasi BottomNavigaionView
         BottomNavigationView bottomNavigationView = findViewById(R.id.bn_main);
-        // beri listener pada saat item/menu bottomnavigation terpilih
+        // beri listener pada saat item_carrier/menu bottomnavigation terpilih
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment fragment = null;
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.home_menu:
                         fragment = new HomeFragment();
                         break;
                     case R.id.location_menu:
-                        fragment = new LocationFragment();
+                        fragment = new ListFragment();
                         break;
                     case R.id.about_menu:
                         fragment = new AboutFragment();
@@ -68,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
 
+    }
     // method untuk load fragment yang sesuai
-    private boolean loadFragment(Fragment fragment) {
+    private boolean loadFragment (Fragment fragment){
         if (fragment != null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fl_container_home, fragment)
@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
-
 
 }
 

@@ -11,6 +11,7 @@
     <dimen name="dp18">18dp</dimen>
     <dimen name="dp20">20dp</dimen>
     <dimen name="dp24">24dp</dimen>
+    <dimen name="dp25">25dp</dimen>
     <dimen name="dp30">30dp</dimen>
     <dimen name="dp35">35dp</dimen>
     <dimen name="dp36">36dp</dimen>
@@ -47,5 +48,4 @@
     <dimen name="sp140">140sp</dimen>
     <dimen name="sp150">150sp</dimen>
     <dimen name="sp160">160sp</dimen>
-
 </resources>

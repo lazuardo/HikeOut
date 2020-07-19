@@ -29,4 +29,6 @@ public class UserModel {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
 }
+

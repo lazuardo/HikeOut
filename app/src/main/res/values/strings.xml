@@ -10,14 +10,24 @@
     <string name="forget">Lupa password?</string>
     <string name="keluar">Logout</string>
     <string name="register">Daftar</string>
-    <string name="Hi">Hi,</string>
+    <string name="Hi">Selamat Datang,</string>
     <string name="H1">HEADING</string>
     <string name="D1">Description</string>
+    <string name="pilihmerchant">Silahkan Pilih Merchant Favorit Anda</string>
+    <string name="merk">MERK</string>
+    <string name="harga">HARGA</string>
 
     <!-- BottomNav String -->
     <string name="home">Home</string>
     <string name="location">Location</string>
     <string name="about">About</string>
+    <string name="list">List</string>
+
+    <!-- PopUp String -->
+    <string name="aboutMe">Tentang Saya</string>
+    <string name="Version">Version 1.0 </string>
+    <string name="Request">Request</string>
+    <string name="Copyright">Juan Lazuardo © 2020</string>
 
     <!-- CardView String -->
     <string name="carrier">Carrier Bag</string>
@@ -30,5 +40,19 @@
 
     <!-- Resousrce String -->
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
-    <string name="copy_right">Juan Lazuardo %1$d</string>
+    <string name="copy_right">Juan Lazuardo © %1$d</string>
+
+    <!-- List String -->
+    <string-array name="MusicTitle">
+        <item>Avicii - The Nights</item>
+        <item>Taylor Swift - Back To December</item>
+        <item>Weird Genius - Lathi</item>
+        <item>Tulus - Monokrom</item>
+        <item> Avicii - Waiting For Love</item>
+        <item>Travie McCoy: Billionaire</item>
+        <item>Brian McKnight - Marry Your Daugther</item>
+        <item>Adele - When We Were Young</item>
+        <item>Honne - Location Unknown</item>
+        <item>Billie Eilish - Lovely</item>
+    </string-array>
 </resources>

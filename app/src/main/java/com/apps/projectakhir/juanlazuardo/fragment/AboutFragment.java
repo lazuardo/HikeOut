@@ -2,18 +2,14 @@ package com.apps.projectakhir.juanlazuardo.fragment;
 
 import android.os.Bundle;
 
-import androidx.annotation.DrawableRes;
 import androidx.fragment.app.Fragment;
 
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.apps.projectakhir.juanlazuardo.R;
-import com.apps.projectakhir.juanlazuardo.projectakhir.AboutActivity;
-import com.apps.projectakhir.juanlazuardo.projectakhir.MainActivity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,12 +30,12 @@ public class AboutFragment extends Fragment{
                 .isRTL(false)
                 .enableDarkMode(false)
                 .setDescription("HikeOut")
-                .setImage(R.drawable.ic_baseline_help)
+                .setImage(R.drawable.about_hikout)
                 .addItem(versionElement)
-                .addGroup("Connect with us")
+                .addGroup("Connect with me")
                 .addEmail("lazuardojuant@gmail.com","Email")
                 .addWebsite("https://juanlazuardo.wordpress.com/","My Wbsite")
-                .addTwitter("@buciiiiin","My Twitter")
+                .addTwitter("buciiiiin","My Twitter")
                 .addYoutube("https://www.youtube.com/channel/UC0xZKgVy6kota4E7TLinEZw","Youtube Channel")
                 .addGitHub("lazuardo","Github")
                 .addInstagram("juanlazuardo","Instagram")
