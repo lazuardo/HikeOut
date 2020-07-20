@@ -13,11 +13,13 @@ import retrofit2.http.PUT;
 public interface ApiInterface {
 
     @GET("ApiJuan")
-    Call<HikeoutGET> getdataCarrier();
+    Call<HikeoutGET>getdataCarrier();
+
     @GET("ApiJuan")
-    Call<HikeoutGET> getdataTenda();
+    Call<HikeoutGET>getdataTenda();
+
     @GET("ApiJuan")
-    Call<HikeoutGET> getdataAks();
+    Call<HikeoutGET>getdataAks();
 
 
 }

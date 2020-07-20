@@ -24,17 +24,26 @@ Update :
                       - Upload Github --> First Upload Project
 
     26 Juni 2020    : - Redesign SplashScreen dan Background MainActivity
+
     27 Juni 2020    : - Membuat LoginActivity, RegisterActivity dengan shared preferences (sementara)
+
     03 Juli 2020    : - Membuat Struktur Database dengan phpmyadmin (belum online)
+
     09 Juli 2020    : - Membuat ViewPager dengan nama WalktroughActivity dengan sharedPreferences
                       - Merubah Desain Icon Aplikasi
+
     15 Juli 2020    : - Menambah CardView pada MainActivity
                       - Menambah Bottom Navigation
+
     18 Juli 2020    : - Membuat AboutFragment menggunakan external library
                       - Membuat ListFragment
+
     19 Juli 2020    : - Membuat RecyclerView di HomeFragment
                       - Connect Database menggunakan Retrofit
                       - Mengelola Data Database dengan Retrofit
+
+    20 Juli 2020    : - Redesign ListView pada ListFragment
+                      - getImage dari API untuk Konten Utama
 */
 
 public class MainActivity extends AppCompatActivity {

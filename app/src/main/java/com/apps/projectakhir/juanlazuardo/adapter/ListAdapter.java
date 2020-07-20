@@ -12,13 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.apps.projectakhir.juanlazuardo.R;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> {
-    String[] data1;
+    String[] data1,data2;
     int[] images;
     Context context;
 
-    public ListAdapter(Context ct, String[] s1, int[] img){
+    public ListAdapter(Context ct, String[] s1, String[] s2,int[] img){
         context = ct;
         data1 = s1;
+        data2 = s2;
         images = img;
     }
 
@@ -33,6 +34,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.txt1.setText(data1[position]);
+        holder.txt2.setText(data2[position]);
         holder.img.setImageResource(images[position]);
     }
 
@@ -42,11 +44,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView txt1;
+        TextView txt1,txt2;
         ImageView img;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             txt1 = itemView.findViewById(R.id.txt_merk);
+            txt2 = itemView.findViewById(R.id.txt_desc);
             img = itemView.findViewById(R.id.ImgView);
         }
     }

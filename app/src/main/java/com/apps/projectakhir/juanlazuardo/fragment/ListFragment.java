@@ -16,9 +16,9 @@ import com.apps.projectakhir.juanlazuardo.adapter.ListAdapter;
 public class ListFragment extends Fragment{
 
     RecyclerView recyclerView;
-    String s1[];
-    int images[] = {R.drawable.ic_people2,R.drawable.ic_people2,R.drawable.ic_people2,R.drawable.ic_people2, R.drawable.ic_people2,
-            R.drawable.ic_people2,R.drawable.ic_people2,R.drawable.ic_people2,R.drawable.ic_people2,R.drawable.ic_people2};
+    String s1[],s2[];
+    int images[] = {R.drawable.about_hikout,R.drawable.ic_baca,R.drawable.ic_lokasi,R.drawable.ic_smile,
+            R.drawable.ic_food,R.drawable.ic_tea};
 
     @Nullable
     @Override
@@ -28,7 +28,8 @@ public class ListFragment extends Fragment{
         recyclerView = view.findViewById(R.id.recycleViewProduct);
 
         s1 = getResources().getStringArray(R.array.MusicTitle);
-        ListAdapter myAdapter = new ListAdapter(getContext(),s1, images);
+        s2 = getResources().getStringArray(R.array.desc_berita);
+        ListAdapter myAdapter = new ListAdapter(getContext(),s1, s2,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 

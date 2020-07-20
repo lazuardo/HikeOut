@@ -37,7 +37,6 @@ public class AboutFragment extends Fragment{
                 .addWebsite("https://juanlazuardo.wordpress.com/","My Wbsite")
                 .addTwitter("buciiiiin","My Twitter")
                 .addYoutube("https://www.youtube.com/channel/UC0xZKgVy6kota4E7TLinEZw","Youtube Channel")
-                .addGitHub("lazuardo","Github")
                 .addInstagram("juanlazuardo","Instagram")
                 .addItem(getCopyRightsElement())
                 .addItem(new Element())

@@ -7,6 +7,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/tvImg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp170"/>
         <TextView
             android:id="@+id/tvId"
             android:layout_width="wrap_content"
@@ -16,6 +20,7 @@
             android:textSize="@dimen/sp16"
             android:textStyle="bold"
             android:textColor="@color/colorWhite"
+            android:layout_below="@+id/tvImg"
             />
         <TextView
             android:id="@+id/tvNama"
@@ -27,12 +32,30 @@
             android:textColor="@color/colorWhite"
             />
         <TextView
-            android:id="@+id/tvNomor"
+            android:id="@+id/tvUkuran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Nomor"
+            android:hint="Ukuran"
             android:textSize="@dimen/sp16"
             android:layout_below="@id/tvNama"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Harga"
+            android:textSize="@dimen/sp16"
+            android:layout_below="@id/tvUkuran"
+            android:textColor="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp16"
+            android:paddingTop="@dimen/dp5"
+            android:layout_below="@id/tvHarga"
             android:textColor="@color/colorWhite"
             />
     </RelativeLayout>

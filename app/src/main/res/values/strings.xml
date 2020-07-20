@@ -4,7 +4,7 @@
     <string name="masuk">Masuk</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="daftar">Belum Punya Aun ? Yuk Daftar</string>
+    <string name="daftar">Belum Punya Akun ? Yuk Daftar</string>
     <string name="confirm">Confirm Password</string>
     <string name="phonenumber">Nomor Telepon</string>
     <string name="forget">Lupa password?</string>
@@ -13,7 +13,7 @@
     <string name="Hi">Selamat Datang,</string>
     <string name="H1">HEADING</string>
     <string name="D1">Description</string>
-    <string name="pilihmerchant">Silahkan Pilih Merchant Favorit Anda</string>
+    <string name="pilihmerchant">Merchant Rekomendasi</string>
     <string name="merk">MERK</string>
     <string name="harga">HARGA</string>
 
@@ -21,7 +21,7 @@
     <string name="home">Home</string>
     <string name="location">Location</string>
     <string name="about">About</string>
-    <string name="list">List</string>
+    <string name="list">News</string>
 
     <!-- PopUp String -->
     <string name="aboutMe">Tentang Saya</string>
@@ -44,15 +44,48 @@
 
     <!-- List String -->
     <string-array name="MusicTitle">
-        <item>Avicii - The Nights</item>
-        <item>Taylor Swift - Back To December</item>
-        <item>Weird Genius - Lathi</item>
-        <item>Tulus - Monokrom</item>
-        <item> Avicii - Waiting For Love</item>
-        <item>Travie McCoy: Billionaire</item>
-        <item>Brian McKnight - Marry Your Daugther</item>
-        <item>Adele - When We Were Young</item>
-        <item>Honne - Location Unknown</item>
-        <item>Billie Eilish - Lovely</item>
+        <item> Hal yang harus Diperhatikan Sebelum Mendaki Gunung </item>
+        <item>Baca semua info pendakian</item>
+        <item>Tentukan lokasi dan level pendakian</item>
+        <item>Persiapan fisik jauh hari</item>
+        <item>Perhatikan bekal dan alat yang kita bawa</item>
+        <item>Asupan makanan sebelum mendaki</item>
+        <item>Beri kabar teman atau keluargai</item>
+    </string-array>
+    <string-array name="desc_berita">
+        <item> </item>
+        <item>Sebelum memikirkan barang-barang yang akan kita bawa untuk mendaki,
+            hal pertama yang perlu kita siapkan ialah informasi lengkap mengenai gunung yang akan didaki.
+            seperti, Transportasi dari rumah menuju basecamp pendakian,Prakiraan cuaca saat kita hendak melakukan pendakian,
+            Kondisi jalur pendakian apakah curam, landai, dan apakah ada jalur alternatif, Prakiraan waktu mendaki untuk membuat rencana perjalanan yang matang,
+            Kondisi gunung, misalnya letak sumber air, jumlah pos kemah, dan peraturan yang perlu dipatuhi.
+
+        </item>
+        <item>Tidak semua jalur pendakian diciptakan sama. Jika ini adalah kesempatan pertama kita untuk mendaki gunung,
+            angan langsung mendaki gunung dengan medan yang sulit. Pilihlah lokasi dan tingkat ekstrimitas pendakian
+            berdasarkan waktu dan kemampuan yang kita miliki. Jangan nekat mendaki gunung yang terlalu tinggi dan
+            medan yang benar-benar esktrem, jika sebelumnya kita hanya pernah melakukan satu atau dua kali pendakian.</item>
+
+        <item>Sebelum mendaki gunung, kita wajib melakukan berbagai latihan fisik demi menghindari risiko cedera.
+            Walt Thompson, ahli fisiologi olahraga di American College of Sports Medicine,
+            menyatakan olahraga yang sebaiknya dilakukan ialah yang serupa dengan aktivitas yang akan kita jalani.
+            Untuk itu, olahraga lari atau jogging menjadi pilihan terbaik untuk persiapan pendakian.
+            Cobalah untuk melakukan olahraga lari atau jogging dengan memilih jalur lari yang menanjak dan menurun.</item>
+
+        <item> Sebelum mendaki gunung, kita perlu memastikan semua perbekalan yang kita bawa telah lengkap.
+            Hal-hal penting yang harus di bawa saat mendaki antara lain: Tenda. Usahakan untuk membawa tenda double layer karena
+            lebih tahan badai dan angin.Makanan dan minuman yang praktis tetapi tetap bernutrisi seperti telur, kornet, sereal,
+            ikan sarden kalengan, dan susu kemasan.Perlengkapan tidur seperti sleeping bag, sarung tangan, kaus kaki.
+
+            Kantong sampah atau trash bag.Perlengkapan makan.Perlengkapan lain seperti tisu, tali rafia, senter, korek api, dan sejenisnya.</item>
+        <item>Jika kita akan naik gunung dengan rute yang cukup melelahkan,kita harus mengonsumsi makanan yang benar-benar memberikan energi.
+            Apa yang kita makan dan minum sehari atau dua hari sebelum pendakian sangat menentukan perjalanan kita menuju puncak gunung.
+            Asupan makanan sangat berperan besar untuk menyediakan energi yang kita butuhkan selama mendaki, sekaligus mencegah kemungkinan cedera.
+            Ahli diet terdaftar Kate Scarlata mengatakan, makanan persiapan naik gunung yang ideal seharusnya mengandung tinggi karbohidrat
+            dan protein, sepeti telur rebus atau daging serta sayuran.</item>
+
+        <item>Kabari seseorang sebelum kita benar-benar melakukan pendakian. Di gunung, tidak ada sinyal dan akses komunikasi yang lancar,
+            sehingga kita perlu memberi tahu kerabat atau keluarga untuk mengantisipasi hal-hal yang tak diinginkan.
+</item>
     </string-array>
 </resources>

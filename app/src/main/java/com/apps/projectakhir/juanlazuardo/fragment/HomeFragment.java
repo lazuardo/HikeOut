@@ -7,6 +7,8 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 
 import com.apps.projectakhir.juanlazuardo.R;
 
+import com.apps.projectakhir.juanlazuardo.adapter.SliderAdapter;
 import com.apps.projectakhir.juanlazuardo.model.RcvModel;
 import com.apps.projectakhir.juanlazuardo.projectakhir.LoginActivity;
 import com.apps.projectakhir.juanlazuardo.adapter.RcvAdapter;
@@ -28,22 +31,31 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.apps.projectakhir.juanlazuardo.R.id.card_acc;
 import static com.apps.projectakhir.juanlazuardo.R.id.card_carrier;
 import static com.apps.projectakhir.juanlazuardo.R.id.card_tent;
-import static com.apps.projectakhir.juanlazuardo.R.id.txt_logout;
+import static com.apps.projectakhir.juanlazuardo.R.id.image;
+import static com.apps.projectakhir.juanlazuardo.R.id.up;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
-    TextView txtkeluar,txtName,txtAbout;
+    TextView txtName,txtAbout;
     ImageView imageView,mImageView2;
     CardView carrier,tent,acc;
     RecyclerView recyclerView;
     ArrayList<RcvModel> rcvModels;
     Dialog mDialog;
     RcvAdapter rcvAdapter;
+
+    ViewPager viewPager;
+    int images[] = {R.drawable.slider1,R.drawable.slider2,R.drawable.slider3};
+    int currentPageCounter = 0;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -77,8 +89,28 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        //SharedPreferences
-        txtkeluar = view.findViewById(txt_logout);
+        //ViewPager
+        viewPager = view.findViewById(R.id.viewPager);
+        viewPager.setAdapter(new SliderAdapter(images,getContext()));
+        final Handler handler = new Handler();
+        final Runnable update = new Runnable() {
+            @Override
+            public void run() {
+                if(currentPageCounter==images.length){
+                    currentPageCounter= 0;
+                }
+                viewPager.setCurrentItem(currentPageCounter++,true);
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, 2500, 2500);
+
+        //findview and setOnclickListener
         txtName = view.findViewById(R.id.txtName);
         carrier = view.findViewById(card_carrier);
         carrier.setOnClickListener(this);
@@ -88,7 +120,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         tent.setOnClickListener(this);
         acc = view.findViewById(card_acc);
         acc.setOnClickListener(this);
-        txtkeluar.setOnClickListener(this);
         declareView();
         return view;
     }
@@ -96,10 +127,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.txt_logout:
-                Preferences.setLogout(getActivity().getBaseContext());
-                startActivity(new Intent(getActivity().getBaseContext(), LoginActivity.class));
-                break;
             case R.id.card_carrier :
                 startActivity(new Intent(getActivity(), TampilCarrier.class));
                 break;

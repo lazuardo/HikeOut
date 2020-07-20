@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.apps.projectakhir.juanlazuardo.R;
@@ -12,8 +13,10 @@ import com.apps.projectakhir.juanlazuardo.model.Hikeout;
 import com.apps.projectakhir.juanlazuardo.model.HikeoutGET;
 import com.apps.projectakhir.juanlazuardo.utils.ApiClient;
 import com.apps.projectakhir.juanlazuardo.utils.ApiInterface;
+import com.bumptech.glide.Glide;
 
 import android.util.Log;
+import android.widget.ImageView;
 
 import java.util.List;
 import retrofit2.Call;
@@ -24,6 +27,7 @@ public class TampilCarrier extends AppCompatActivity {
 
     ApiInterface mApiInterface;
     private RecyclerView mRecyclerView;
+    ImageView carrier_img;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     public static TampilCarrier ma;
@@ -32,6 +36,7 @@ public class TampilCarrier extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tampil);
+
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         mLayoutManager = new LinearLayoutManager(this);
